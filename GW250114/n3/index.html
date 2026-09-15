@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GW250114: 3-mode fits, 16 start times - silencio results</title>
+<link rel="stylesheet" href="../../static/site.css?v=990b1a7e88c8">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="../../index.html">silencio results</a>
+  <nav class="crumbs"><a href="../../index.html">events</a><span class="sep">/</span><a href="../index.html">GW250114</a><span class="sep">/</span><span class="here">n3</span>
+  </nav>
+</header>
+<main>
+
+<h1>GW250114: 3-mode fits, 16 start times</h1>
+<p class="lede">All 3-mode fits across start times 0..15 M_rem after the IMR peak. Posteriors are the cold chains only. gamma = 1/tau in 1/s; f in Hz.</p><p class="lede">Stage 2 intersects the permutation-matched posteriors of the runs in a start-time window of width dt = 5 or 10 M_rem from t_start = 0. Stage 3 assigns QNM labels to the intersection modes. Divergence counts are the raw sampler counter; its exact meaning is not verified.</p>
+
+
+<section class="panel">
+  <h2>Settings</h2>
+  <table class="kv">
+    <tbody>
+      <tr><th scope="row">n_modes</th><td>3</td></tr>
+      <tr><th scope="row">start times [M_rem]</th><td>0, 1, ..., 15</td></tr>
+      <tr><th scope="row">Stage-2 windows dt [M_rem]</th><td>5, 10</td></tr>
+    </tbody>
+  </table>
+</section>
+
+
+<section class="panel">
+  <h2>Summary figures <span class="count">(5)</span></h2>
+  <div class="figgrid">
+    <figure class="fig">
+      <a href="../../assets/2ce8157150a6e51b.webp" class="zoom" data-caption="Posterior in the f-gamma plane for all 16 start times, 3-mode fits, over the full prior box (dashed), with the QNM predictions from the IMR remnant posterior overlaid.">
+        <img src="../../assets/2ce8157150a6e51b_thumb.webp" alt="Posterior in the f-gamma plane for all 16 start times, 3-mode fits, over the full prior box (dashed), with the QNM predictions from the IMR remnant posterior overlaid." loading="lazy" width="480" height="450">
+      </a>
+      <figcaption>Posterior in the f-gamma plane for all 16 start times, 3-mode fits, over the full prior box (dashed), with the QNM predictions from the IMR remnant posterior overlaid.</figcaption>
+    </figure>
+    <figure class="fig">
+      <a href="../../assets/fa3d117bd58c974e.webp" class="zoom" data-caption="Stage-2 comparison, dt = 5 M_rem: permutation-matched posteriors of the runs inside the window (colour = t_start), their intersection (red x), and the IMR QNM predictions. Panel titles give the Stage-3 label per Stage-2 mode.">
+        <img src="../../assets/fa3d117bd58c974e_thumb.webp" alt="Stage-2 comparison, dt = 5 M_rem: permutation-matched posteriors of the runs inside the window (colour = t_start), their intersection (red x), and the IMR QNM predictions. Panel titles give the Stage-3 label per Stage-2 mode." loading="lazy" width="480" height="199">
+      </a>
+      <figcaption>Stage-2 comparison, dt = 5 M_rem: permutation-matched posteriors of the runs inside the window (colour = t_start), their intersection (red x), and the IMR QNM predictions. Panel titles give the Stage-3 label per Stage-2 mode.</figcaption>
+    </figure>
+    <figure class="fig">
+      <a href="../../assets/0928a598d80d7d40.webp" class="zoom" data-caption="Stage-2 comparison, dt = 10 M_rem: permutation-matched posteriors of the runs inside the window (colour = t_start), their intersection (red x), and the IMR QNM predictions. Panel titles give the Stage-3 label per Stage-2 mode.">
+        <img src="../../assets/0928a598d80d7d40_thumb.webp" alt="Stage-2 comparison, dt = 10 M_rem: permutation-matched posteriors of the runs inside the window (colour = t_start), their intersection (red x), and the IMR QNM predictions. Panel titles give the Stage-3 label per Stage-2 mode." loading="lazy" width="480" height="197">
+      </a>
+      <figcaption>Stage-2 comparison, dt = 10 M_rem: permutation-matched posteriors of the runs inside the window (colour = t_start), their intersection (red x), and the IMR QNM predictions. Panel titles give the Stage-3 label per Stage-2 mode.</figcaption>
+    </figure>
+    <figure class="fig">
+      <a href="../../assets/db26dab33f04954a.webp" class="zoom" data-caption="Network matched-filter and optimal SNR posterior distributions vs start time.">
+        <img src="../../assets/db26dab33f04954a_thumb.webp" alt="Network matched-filter and optimal SNR posterior distributions vs start time." loading="lazy" width="480" height="295">
+      </a>
+      <figcaption>Network matched-filter and optimal SNR posterior distributions vs start time.</figcaption>
+    </figure>
+    <figure class="fig">
+      <a href="../../assets/086b62cbab0a4c79.webp" class="zoom" data-caption="Run health vs start time: max R-hat, min ESS, raw divergence count (cold chains; exact meaning of the counter not verified), wall clock.">
+        <img src="../../assets/086b62cbab0a4c79_thumb.webp" alt="Run health vs start time: max R-hat, min ESS, raw divergence count (cold chains; exact meaning of the counter not verified), wall clock." loading="lazy" width="480" height="295">
+      </a>
+      <figcaption>Run health vs start time: max R-hat, min ESS, raw divergence count (cold chains; exact meaning of the counter not verified), wall clock.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="panel">
+  <h2>Stage-3 mode assignment</h2><p class="caption">Every assignment uses fallback_mahalanobis with deviation_flag = true: the conformal prediction point carries no amplitude or phase on real data. Labels come from the ranking d_k = sqrt((f_k/f_220 - 1)^2 + (gamma_k/gamma_220 - 1)^2) of the IMR-predicted QNMs.</p>
+  <table class="data sortable">
+    <thead><tr><th scope="col">dt [M_rem]</th><th scope="col">window</th><th scope="col">Stage-2 mode index</th><th scope="col">QNM label (l.m.n)</th><th scope="col">d_k</th><th scope="col">method</th><th scope="col">deviation_flag</th></tr></thead>
+    <tbody>
+      <tr><td>5</td><td>t0..t5 M_rem (6 runs)</td><td>0</td><td>2.2.0</td><td>0</td><td>fallback_mahalanobis</td><td>true</td></tr>
+      <tr><td>5</td><td>t0..t5 M_rem (6 runs)</td><td>1</td><td>3.3.0</td><td>0.587</td><td>fallback_mahalanobis</td><td>true</td></tr>
+      <tr><td>5</td><td>t0..t5 M_rem (6 runs)</td><td>2</td><td>2.2.1</td><td>2.03</td><td>fallback_mahalanobis</td><td>true</td></tr>
+      <tr><td>10</td><td>t0..t10 M_rem (11 runs)</td><td>0</td><td>2.2.0</td><td>0</td><td>fallback_mahalanobis</td><td>true</td></tr>
+      <tr><td>10</td><td>t0..t10 M_rem (11 runs)</td><td>1</td><td>3.3.0</td><td>0.587</td><td>fallback_mahalanobis</td><td>true</td></tr>
+      <tr><td>10</td><td>t0..t10 M_rem (11 runs)</td><td>2</td><td>2.2.1</td><td>2.03</td><td>fallback_mahalanobis</td><td>true</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section class="panel">
+  <h2>IMR-predicted QNMs used for the ranking</h2>
+  <table class="data sortable">
+    <thead><tr><th scope="col">QNM label</th><th scope="col">f [Hz]</th><th scope="col">gamma = 1/tau [1/s]</th><th scope="col">d_k</th></tr></thead>
+    <tbody>
+      <tr><td>2.2.0</td><td>248.35</td><td>245.16</td><td>0</td></tr>
+      <tr><td>3.3.0</td><td>393.99</td><td>251.86</td><td>0.587</td></tr>
+      <tr><td>2.2.1</td><td>242.49</td><td>741.6</td><td>2.03</td></tr>
+    </tbody>
+  </table>
+</section>
+
+
+<section class="panel">
+  <h2>Runs <span class="count">(16)</span></h2>
+  <p class="tools"><label>filter <input type="search" class="tablefilter" data-target="runtable" placeholder="type to filter rows"></label></p>
+  <table class="data sortable" id="runtable">
+    <thead><tr>
+      <th scope="col">run</th>
+      <th scope="col">status</th><th scope="col">n_modes</th><th scope="col">t_start [M_rem]</th><th scope="col">f_0 [Hz]</th><th scope="col">gamma_0 [1/s]</th><th scope="col">f_1 [Hz]</th><th scope="col">gamma_1 [1/s]</th><th scope="col">f_2 [Hz]</th><th scope="col">gamma_2 [1/s]</th><th scope="col">network matched-filter SNR</th><th scope="col">max R-hat</th><th scope="col">min ESS</th><th scope="col">divergences, cold chains (raw)</th>
+    </tr></thead>
+    <tbody>
+      <tr>
+        <td><a href="t0Mf/index.html">t0Mf</a></td>
+        <td>converged</td><td>3</td><td>0</td><td>250.6 (+8.524 / -7.815)</td><td>224.8 (+58.1 / -41.63)</td><td>195 (+256.7 / -153.8)</td><td>1547 (+867 / -1096)</td><td>340 (+596 / -304.2)</td><td>1940 (+513.6 / -1044)</td><td>23.4 (+0.104 / -0.166)</td><td>1.001</td><td>4213</td><td>22</td>
+      </tr>
+      <tr>
+        <td><a href="t1Mf/index.html">t1Mf</a></td>
+        <td>converged</td><td>3</td><td>1</td><td>250.4 (+9.172 / -8.179)</td><td>226.8 (+61.68 / -42.39)</td><td>428.8 (+532.8 / -389)</td><td>1731 (+691.3 / -1128)</td><td>209.8 (+347.4 / -160.7)</td><td>1597 (+829.5 / -1241)</td><td>22.6 (+0.11 / -0.174)</td><td>1</td><td>5770</td><td>60</td>
+      </tr>
+      <tr>
+        <td><a href="t2Mf/index.html">t2Mf</a></td>
+        <td>converged</td><td>3</td><td>2</td><td>251.3 (+9.388 / -8.628)</td><td>230.3 (+67.07 / -45.75)</td><td>248 (+548.1 / -207.9)</td><td>1380 (+999.2 / -1028)</td><td>434.9 (+532.6 / -379.3)</td><td>2024 (+427 / -895.6)</td><td>21.7 (+0.108 / -0.179)</td><td>1</td><td>5508</td><td>63</td>
+      </tr>
+      <tr>
+        <td><a href="t3Mf/index.html">t3Mf</a></td>
+        <td>converged</td><td>3</td><td>3</td><td>251.3 (+8.948 / -9.591)</td><td>235.5 (+72.04 / -49.58)</td><td>180.2 (+413.5 / -146.3)</td><td>1428 (+969.4 / -1090)</td><td>416.7 (+549 / -372.6)</td><td>1868 (+578.9 / -1180)</td><td>19.1 (+0.116 / -0.196)</td><td>1.001</td><td>5539</td><td>65</td>
+      </tr>
+      <tr>
+        <td><a href="t4Mf/index.html">t4Mf</a></td>
+        <td>converged</td><td>3</td><td>4</td><td>251.2 (+9.6 / -9.605)</td><td>238.4 (+79.43 / -50.97)</td><td>235.7 (+502.3 / -199.3)</td><td>1328 (+1038 / -1041)</td><td>466.4 (+510.6 / -411.2)</td><td>1944 (+504.9 / -1078)</td><td>17.7 (+0.115 / -0.218)</td><td>1.001</td><td>5164</td><td>86</td>
+      </tr>
+      <tr>
+        <td><a href="t5Mf/index.html">t5Mf</a></td>
+        <td>converged</td><td>3</td><td>5</td><td>251.6 (+10.65 / -10.95)</td><td>244.7 (+83.76 / -56.78)</td><td>197.7 (+460.3 / -162.5)</td><td>1355 (+1026 / -1063)</td><td>471.4 (+501.7 / -422.7)</td><td>1869 (+576.9 / -1202)</td><td>15.6 (+0.127 / -0.236)</td><td>1</td><td>4674</td><td>120</td>
+      </tr>
+      <tr>
+        <td><a href="t6Mf/index.html">t6Mf</a></td>
+        <td>converged</td><td>3</td><td>6</td><td>251.7 (+12.54 / -12.53)</td><td>253.2 (+104.8 / -62.03)</td><td>191.1 (+483.2 / -156.5)</td><td>1321 (+1041 / -1007)</td><td>449.6 (+528.7 / -404.2)</td><td>1863 (+584.8 / -1181)</td><td>14.7 (+0.139 / -0.253)</td><td>1</td><td>5741</td><td>61</td>
+      </tr>
+      <tr>
+        <td><a href="t7Mf/index.html">t7Mf</a></td>
+        <td>converged</td><td>3</td><td>7</td><td>252.2 (+12.76 / -14.17)</td><td>258.4 (+115.9 / -69.51)</td><td>181.8 (+463.5 / -149.5)</td><td>1370 (+1010 / -1068)</td><td>455.1 (+521.7 / -406.5)</td><td>1849 (+599.1 / -1245)</td><td>14.7 (+0.139 / -0.257)</td><td>1.001</td><td>5086</td><td>74</td>
+      </tr>
+      <tr>
+        <td><a href="t8Mf/index.html">t8Mf</a></td>
+        <td>converged</td><td>3</td><td>8</td><td>252.8 (+15 / -15.78)</td><td>269.4 (+141.4 / -83.41)</td><td>185.1 (+486.7 / -150.7)</td><td>1387 (+989.3 / -1040)</td><td>446.8 (+532.8 / -398.5)</td><td>1867 (+574.8 / -1158)</td><td>14.4 (+0.155 / -0.266)</td><td>1</td><td>4362</td><td>86</td>
+      </tr>
+      <tr>
+        <td><a href="t9Mf/index.html">t9Mf</a></td>
+        <td>converged</td><td>3</td><td>9</td><td>254.3 (+17.69 / -18.99)</td><td>286.1 (+175.5 / -98.31)</td><td>165.7 (+439.6 / -135.5)</td><td>1521 (+896.5 / -1130)</td><td>434.1 (+534 / -392.7)</td><td>1888 (+552.7 / -1227)</td><td>12.9 (+0.217 / -0.321)</td><td>1</td><td>4730</td><td>60</td>
+      </tr>
+      <tr>
+        <td><a href="t10Mf/index.html">t10Mf</a></td>
+        <td>converged</td><td>3</td><td>10</td><td>254.9 (+19.29 / -19.15)</td><td>287.4 (+174.9 / -106.8)</td><td>183 (+396.2 / -149.6)</td><td>1390 (+985.4 / -1034)</td><td>458.1 (+511.4 / -405.2)</td><td>1843 (+596.9 / -1215)</td><td>11.9 (+0.184 / -0.341)</td><td>1</td><td>5384</td><td>52</td>
+      </tr>
+      <tr>
+        <td><a href="t11Mf/index.html">t11Mf</a></td>
+        <td>converged</td><td>3</td><td>11</td><td>258.2 (+21.51 / -21.63)</td><td>301.8 (+211.5 / -118.7)</td><td>162.2 (+349.7 / -129.7)</td><td>1491 (+910.8 / -1091)</td><td>393.6 (+559.8 / -348.5)</td><td>1831 (+608.1 / -1190)</td><td>9.89 (+0.227 / -0.399)</td><td>1.001</td><td>5029</td><td>41</td>
+      </tr>
+      <tr>
+        <td><a href="t12Mf/index.html">t12Mf</a></td>
+        <td>converged</td><td>3</td><td>12</td><td>259.4 (+24.79 / -22.79)</td><td>312.1 (+236 / -126.2)</td><td>210.7 (+434.2 / -175.4)</td><td>1473 (+913.2 / -1058)</td><td>484.8 (+483 / -431.3)</td><td>1845 (+601.2 / -1291)</td><td>9.69 (+0.244 / -0.414)</td><td>1</td><td>4555</td><td>54</td>
+      </tr>
+      <tr>
+        <td><a href="t13Mf/index.html">t13Mf</a></td>
+        <td>converged</td><td>3</td><td>13</td><td>260.1 (+26.87 / -40.82)</td><td>341 (+434.8 / -157)</td><td>205.9 (+447.2 / -173.7)</td><td>1514 (+884.6 / -1112)</td><td>438.4 (+526.3 / -388.7)</td><td>1841 (+598.5 / -1193)</td><td>9.53 (+0.254 / -0.495)</td><td>1</td><td>4740</td><td>55</td>
+      </tr>
+      <tr>
+        <td><a href="t14Mf/index.html">t14Mf</a></td>
+        <td>converged</td><td>3</td><td>14</td><td>261.3 (+30.51 / -45.82)</td><td>354.2 (+516.2 / -175.3)</td><td>189.3 (+451.3 / -158.6)</td><td>1442 (+941.9 / -1067)</td><td>440 (+526.4 / -395.8)</td><td>1879 (+564 / -1178)</td><td>9.31 (+0.269 / -0.52)</td><td>1</td><td>3550</td><td>51</td>
+      </tr>
+      <tr>
+        <td><a href="t15Mf/index.html">t15Mf</a></td>
+        <td>converged</td><td>3</td><td>15</td><td>260.4 (+38.25 / -114.3)</td><td>379.6 (+773.6 / -205.7)</td><td>241.2 (+520.9 / -206.8)</td><td>1284 (+1064 / -960.8)</td><td>404.8 (+554.4 / -355.7)</td><td>1984 (+466.8 / -953.2)</td><td>8.41 (+0.333 / -0.678)</td><td>1.002</td><td>4585</td><td>58</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+
+</main>
+<footer class="foot">silencio v0.1.0 &middot; published 2026-09-15</footer>
+<div id="lightbox" class="lightbox" hidden><img id="lightbox-img" alt=""><p id="lightbox-cap"></p></div>
+<script src="../../static/site.js?v=990b1a7e88c8"></script>
+</body>
+</html>

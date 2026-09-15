@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GW250114: 2-mode fit, start 4 M_rem after the IMR peak - silencio results</title>
+<link rel="stylesheet" href="../../../static/site.css?v=990b1a7e88c8">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="../../../index.html">silencio results</a>
+  <nav class="crumbs"><a href="../../../index.html">events</a><span class="sep">/</span><a href="../../index.html">GW250114</a><span class="sep">/</span><a href="../index.html">n2</a><span class="sep">/</span><span class="here">t4Mf</span>
+  </nav>
+</header>
+<main>
+
+<h1>GW250114: 2-mode fit, start 4 M_rem after the IMR peak</h1>
+<p class="runid">run identifier <code>n2/t4Mf</code> &middot; status <strong>converged</strong></p>
+<p class="lede">Ringdown fit of 2 damped sinusoid(s) to H1 and L1 strain, starting 4 M_rem after the IMR max-likelihood peak, with a 0.3 s analysis window. Posterior = 4 cold chains of a tempered sampler.</p><p class="lede">Run-table values: posterior median with the 5th and 95th percentiles (90% interval) shown as (+upper / -lower). Mode indices 0..N-1 are the sampler&#39;s EM-classified indices; they are not QNM labels and are not ordered by amplitude.</p><p class="lede">Prior box: f in [20, 1024] Hz, gamma = 1/tau in [1, 2500] 1/s. The &#39;near prior edge&#39; column is the fraction of samples within 2% of the box width of either edge.</p>
+
+
+<section class="panel">
+  <h2>Settings</h2>
+  <table class="kv">
+    <tbody>
+      <tr><th scope="row">n_modes</th><td>2</td></tr>
+      <tr><th scope="row">t_start [M_rem]</th><td>4</td></tr>
+    </tbody>
+  </table>
+</section>
+
+
+<section class="panel">
+  <h2>Posterior summary</h2>
+  <table class="kv">
+    <tbody>
+      <tr><th scope="row">f_0 [Hz]</th><td>250.5 (+8.432 / -8.297)</td></tr>
+      <tr><th scope="row">gamma_0 [1/s]</th><td>230.9 (+59.94 / -44.87)</td></tr>
+      <tr><th scope="row">f_1 [Hz]</th><td>345 (+600.7 / -301.6)</td></tr>
+      <tr><th scope="row">gamma_1 [1/s]</th><td>1635 (+784.6 / -1265)</td></tr>
+      <tr><th scope="row">network matched-filter SNR</th><td>17.7 (+0.0983 / -0.195)</td></tr>
+      <tr><th scope="row">max R-hat</th><td>1.001</td></tr>
+      <tr><th scope="row">min ESS</th><td>5229</td></tr>
+      <tr><th scope="row">divergences, cold chains (raw)</th><td>101</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section class="panel">
+  <h2>Posterior summary (cold chains)</h2>
+  <table class="data sortable">
+    <thead><tr><th scope="col">mode index</th><th scope="col">parameter</th><th scope="col">median</th><th scope="col">5%</th><th scope="col">95%</th><th scope="col">unit</th><th scope="col">fraction near prior edge</th></tr></thead>
+    <tbody>
+      <tr><td>0</td><td>f</td><td>250.5</td><td>242.2</td><td>259</td><td>Hz</td><td>0</td></tr>
+      <tr><td>0</td><td>gamma = 1/tau</td><td>230.9</td><td>186.1</td><td>290.9</td><td>1/s</td><td>0</td></tr>
+      <tr><td>0</td><td>tau</td><td>0.00433</td><td>0.003438</td><td>0.005375</td><td>s</td><td>-</td></tr>
+      <tr><td>0</td><td>log10 A</td><td>-20.85</td><td>-20.97</td><td>-20.6</td><td>-</td><td>-</td></tr>
+      <tr><td>1</td><td>f</td><td>345</td><td>43.39</td><td>945.7</td><td>Hz</td><td>0.057</td></tr>
+      <tr><td>1</td><td>gamma = 1/tau</td><td>1635</td><td>369.9</td><td>2420</td><td>1/s</td><td>0.035</td></tr>
+      <tr><td>1</td><td>tau</td><td>0.0006116</td><td>0.0004133</td><td>0.002704</td><td>s</td><td>-</td></tr>
+      <tr><td>1</td><td>log10 A</td><td>-21.22</td><td>-22.3</td><td>-20.38</td><td>-</td><td>-</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section class="panel">
+  <h2>Signal-to-noise ratio (posterior distribution over samples)</h2>
+  <table class="data sortable">
+    <thead><tr><th scope="col">SNR</th><th scope="col">median</th><th scope="col">5%</th><th scope="col">95%</th></tr></thead>
+    <tbody>
+      <tr><td>network matched-filter</td><td>17.7</td><td>17.5</td><td>17.8</td></tr>
+      <tr><td>network optimal</td><td>17.8</td><td>16.1</td><td>19.4</td></tr>
+      <tr><td>H1 matched-filter</td><td>12.3</td><td>12.1</td><td>12.3</td></tr>
+      <tr><td>L1 matched-filter</td><td>12.9</td><td>12.7</td><td>12.9</td></tr>
+      <tr><td>H1 optimal</td><td>11.7</td><td>10.4</td><td>13.1</td></tr>
+      <tr><td>L1 optimal</td><td>13.4</td><td>11.9</td><td>14.8</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section class="panel">
+  <h2>Stage-3 mode assignment</h2><p class="caption">Stage 2 intersects posteriors over a start-time window of width dt (M_rem) from t_start = 0; Stage 3 labels the intersection modes. Method is fallback_mahalanobis with deviation_flag = true for every row, because the conformal prediction point has no amplitude or phase on real data. d_k = sqrt((f_k/f_220 - 1)^2 + (gamma_k/gamma_220 - 1)^2) is the distance of the predicted IMR QNM k from the predicted 220 mode, used to rank labels. It is not a distance of this posterior.</p>
+  <table class="data sortable">
+    <thead><tr><th scope="col">dt [M_rem]</th><th scope="col">Stage-2 mode index</th><th scope="col">this run&#39;s mode index</th><th scope="col">QNM label (l.m.n)</th><th scope="col">d_k</th><th scope="col">method</th><th scope="col">deviation_flag</th></tr></thead>
+    <tbody>
+      <tr><td>5</td><td>0</td><td>0</td><td>2.2.0</td><td>0</td><td>fallback_mahalanobis</td><td>true</td></tr>
+      <tr><td>5</td><td>1</td><td>1</td><td>2.2.1</td><td>2.03</td><td>fallback_mahalanobis</td><td>true</td></tr>
+      <tr><td>10</td><td>0</td><td>0</td><td>2.2.0</td><td>0</td><td>fallback_mahalanobis</td><td>true</td></tr>
+      <tr><td>10</td><td>1</td><td>1</td><td>2.2.1</td><td>2.03</td><td>fallback_mahalanobis</td><td>true</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section class="panel">
+  <h2>Convergence and run health</h2>
+  <table class="data sortable">
+    <thead><tr><th scope="col">quantity</th><th scope="col">value</th></tr></thead>
+    <tbody>
+      <tr><td>converged (sampler flag)</td><td>true</td></tr>
+      <tr><td>max R-hat (cold chains)</td><td>1.0006</td></tr>
+      <tr><td>min ESS</td><td>5228.5</td></tr>
+      <tr><td>sweeps total / burn-in</td><td>5825 / 3825</td></tr>
+      <tr><td>posterior samples (4 cold chains x post-burn-in sweeps)</td><td>8000</td></tr>
+      <tr><td>per-chain resets / collapse restarts</td><td>0 / 0</td></tr>
+      <tr><td>divergences, cold chains (raw per_chain_div_total; meaning not verified)</td><td>101</td></tr>
+      <tr><td>divergences, all 8 chains (raw per_chain_div_total; meaning not verified)</td><td>124</td></tr>
+      <tr><td>wall clock [min]</td><td>49.5</td></tr>
+    </tbody>
+  </table>
+</section>
+
+
+<section class="panel">
+  <h2>Figures <span class="count">(6)</span></h2>
+  <div class="figgrid">
+    <figure class="fig">
+      <a href="../../../assets/016f7bd894435aa6.webp" class="zoom" data-caption="Corner plot of all six per-mode parameters (f, 1/tau, A, epsilon, phi, theta), cold chains. Colours are sampler mode indices (EM-classified), not QNM labels. &#39;Kerr (max-L)&#39; markers are the IMR max-likelihood Kerr QNM predictions; on real data there is no true value. Axes span the prior box.">
+        <img src="../../../assets/016f7bd894435aa6_thumb.webp" alt="Corner plot of all six per-mode parameters (f, 1/tau, A, epsilon, phi, theta), cold chains. Colours are sampler mode indices (EM-classified), not QNM labels. &#39;Kerr (max-L)&#39; markers are the IMR max-likelihood Kerr QNM predictions; on real data there is no true value. Axes span the prior box." loading="lazy" width="480" height="487">
+      </a>
+      <figcaption>Corner plot of all six per-mode parameters (f, 1/tau, A, epsilon, phi, theta), cold chains. Colours are sampler mode indices (EM-classified), not QNM labels. &#39;Kerr (max-L)&#39; markers are the IMR max-likelihood Kerr QNM predictions; on real data there is no true value. Axes span the prior box.</figcaption>
+    </figure>
+    <figure class="fig">
+      <a href="../../../assets/4c413a6a62e7dc17.webp" class="zoom" data-caption="Sampler mode 0: f [Hz] vs gamma = 1/tau [1/s], per cold chain; top row full range, bottom row zoom. Green cross = IMR max-L Kerr prediction for the QNM listed at the same index (not an identification).">
+        <img src="../../../assets/4c413a6a62e7dc17_thumb.webp" alt="Sampler mode 0: f [Hz] vs gamma = 1/tau [1/s], per cold chain; top row full range, bottom row zoom. Green cross = IMR max-L Kerr prediction for the QNM listed at the same index (not an identification)." loading="lazy" width="480" height="208">
+      </a>
+      <figcaption>Sampler mode 0: f [Hz] vs gamma = 1/tau [1/s], per cold chain; top row full range, bottom row zoom. Green cross = IMR max-L Kerr prediction for the QNM listed at the same index (not an identification).</figcaption>
+    </figure>
+    <figure class="fig">
+      <a href="../../../assets/ab3546e8a3e8beaa.webp" class="zoom" data-caption="Sampler mode 1: f [Hz] vs gamma = 1/tau [1/s], per cold chain; top row full range, bottom row zoom. Green cross = IMR max-L Kerr prediction for the QNM listed at the same index (not an identification).">
+        <img src="../../../assets/ab3546e8a3e8beaa_thumb.webp" alt="Sampler mode 1: f [Hz] vs gamma = 1/tau [1/s], per cold chain; top row full range, bottom row zoom. Green cross = IMR max-L Kerr prediction for the QNM listed at the same index (not an identification)." loading="lazy" width="480" height="208">
+      </a>
+      <figcaption>Sampler mode 1: f [Hz] vs gamma = 1/tau [1/s], per cold chain; top row full range, bottom row zoom. Green cross = IMR max-L Kerr prediction for the QNM listed at the same index (not an identification).</figcaption>
+    </figure>
+    <figure class="fig">
+      <a href="../../../assets/c492cfe11199a476.webp" class="zoom" data-caption="Trace of f, gamma, A, epsilon per mode for the 4 cold chains versus sweep. Dotted vertical line = end of burn-in. Red dashed line = IMR max-L Kerr prediction at the same index (&#39;truth&#39; has no meaning on real data).">
+        <img src="../../../assets/c492cfe11199a476_thumb.webp" alt="Trace of f, gamma, A, epsilon per mode for the 4 cold chains versus sweep. Dotted vertical line = end of burn-in. Red dashed line = IMR max-L Kerr prediction at the same index (&#39;truth&#39; has no meaning on real data)." loading="lazy" width="480" height="148">
+      </a>
+      <figcaption>Trace of f, gamma, A, epsilon per mode for the 4 cold chains versus sweep. Dotted vertical line = end of burn-in. Red dashed line = IMR max-L Kerr prediction at the same index (&#39;truth&#39; has no meaning on real data).</figcaption>
+    </figure>
+    <figure class="fig">
+      <a href="../../../assets/f02b4b210f16554e.webp" class="zoom" data-caption="Whitened H1 and L1 strain (0.3 s window from t_start) with the posterior waveform median and 16-84% / 5-95% bands from 100 posterior draws. The word &#39;truth&#39; in the image means the IMR max-L sky position and template time, not a true value.">
+        <img src="../../../assets/f02b4b210f16554e_thumb.webp" alt="Whitened H1 and L1 strain (0.3 s window from t_start) with the posterior waveform median and 16-84% / 5-95% bands from 100 posterior draws. The word &#39;truth&#39; in the image means the IMR max-L sky position and template time, not a true value." loading="lazy" width="480" height="318">
+      </a>
+      <figcaption>Whitened H1 and L1 strain (0.3 s window from t_start) with the posterior waveform median and 16-84% / 5-95% bands from 100 posterior draws. The word &#39;truth&#39; in the image means the IMR max-L sky position and template time, not a true value.</figcaption>
+    </figure>
+    <figure class="fig">
+      <a href="../../../assets/7e61ab66985c926b.webp" class="zoom" data-caption="Zoom of the whitened-strain panel above on the start of the window.">
+        <img src="../../../assets/7e61ab66985c926b_thumb.webp" alt="Zoom of the whitened-strain panel above on the start of the window." loading="lazy" width="480" height="318">
+      </a>
+      <figcaption>Zoom of the whitened-strain panel above on the start of the window.</figcaption>
+    </figure>
+  </div>
+</section>
+
+
+</main>
+<footer class="foot">silencio v0.1.0 &middot; published 2026-09-15</footer>
+<div id="lightbox" class="lightbox" hidden><img id="lightbox-img" alt=""><p id="lightbox-cap"></p></div>
+<script src="../../../static/site.js?v=990b1a7e88c8"></script>
+</body>
+</html>

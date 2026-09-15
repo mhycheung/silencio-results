@@ -1,0 +1,58 @@
+/* silencio results site - one stylesheet, no framework. */
+:root{
+  --bg:#f6f7f9; --panel:#ffffff; --line:#d8dde4; --ink:#1c2230; --dim:#586272;
+  --accent:#0a5fc2; --ok:#1d7f46; --warn:#8f5b00; --bad:#b3261e;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.topbar{display:flex;gap:1rem;align-items:baseline;flex-wrap:wrap;
+  padding:.8rem 1.2rem;border-bottom:1px solid var(--line);background:var(--panel)}
+.brand{font-weight:700;letter-spacing:.02em}
+.crumbs{color:var(--dim);font-size:.9rem}
+.crumbs .sep{padding:0 .35rem;color:var(--line)}
+.crumbs .here{color:var(--ink)}
+main{max-width:1180px;margin:0 auto;padding:1.2rem}
+h1{font-size:1.6rem;margin:.6rem 0}
+h2{font-size:1.1rem;margin:0 0 .6rem;border-bottom:1px solid var(--line);padding-bottom:.3rem}
+h3{font-size:1rem;margin:0 0 .4rem}
+.count{color:var(--dim);font-weight:400;font-size:.85rem}
+.lede{color:var(--dim);max-width:70ch}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:8px;
+  padding:1rem;margin:1rem 0;overflow-x:auto}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:.8rem}
+.card{display:block;background:var(--bg);border:1px solid var(--line);border-radius:8px;
+  padding:.8rem;color:inherit}
+.card:hover{border-color:var(--accent);text-decoration:none}
+dl.mini{display:grid;grid-template-columns:auto 1fr;gap:.15rem .6rem;margin:.4rem 0 0;font-size:.85rem}
+dl.mini dt{color:var(--dim)}
+dl.mini dd{margin:0}
+table{border-collapse:collapse;width:100%;font-size:.88rem}
+th,td{padding:.35rem .6rem;border-bottom:1px solid var(--line);text-align:left;
+  white-space:nowrap;vertical-align:top}
+table.kv th{color:var(--dim);font-weight:500;width:14rem}
+table.sortable thead th{cursor:pointer;user-select:none;position:sticky;top:0;background:var(--panel)}
+table.sortable thead th::after{content:"";color:var(--dim)}
+table.sortable thead th.asc::after{content:" \25B2"}
+table.sortable thead th.desc::after{content:" \25BC"}
+tbody tr:hover{background:#eef2f8}
+.tools{margin:.2rem 0 .6rem;color:var(--dim);font-size:.85rem}
+.tools input{background:var(--bg);border:1px solid var(--line);color:var(--ink);
+  border-radius:5px;padding:.25rem .5rem;min-width:16rem}
+.figgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem}
+.fig{margin:0}
+.fig img{width:100%;height:auto;background:#fff;border:1px solid var(--line);border-radius:6px}
+figcaption{color:var(--dim);font-size:.82rem;margin-top:.35rem}
+.caption{color:var(--dim);font-size:.85rem;margin:.2rem 0 .6rem}
+.empty{color:var(--dim);font-style:italic}
+.runid code{background:var(--panel);padding:.1rem .35rem;border-radius:4px}
+.foot{color:var(--dim);font-size:.8rem;text-align:center;padding:1.2rem;
+  border-top:1px solid var(--line)}
+.lightbox{position:fixed;inset:0;background:rgba(0,0,0,.9);display:flex;
+  flex-direction:column;align-items:center;justify-content:center;gap:.8rem;padding:2rem;z-index:50}
+/* display:flex above overrides the hidden attribute; without this the overlay covers every page. */
+.lightbox[hidden]{display:none}
+.lightbox img{max-width:95vw;max-height:85vh;background:#fff}
+.lightbox p{color:#d5dae2;margin:0;text-align:center;max-width:70ch}

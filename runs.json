@@ -1,0 +1,975 @@
+{
+  "build_date": "2026-09-15",
+  "events": [
+    {
+      "event": "GW250114",
+      "groups": [
+        {
+          "group": "n1",
+          "runs": [
+            {
+              "results": {
+                "divergences, cold chains (raw)": "0",
+                "f_0 [Hz]": "237.6 (+5.288 / -5.64)",
+                "gamma_0 [1/s]": "228.4 (+33.24 / -29.16)",
+                "max R-hat": "1",
+                "min ESS": "6375",
+                "network matched-filter SNR": "22.9 (+0.0837 / -0.14)"
+              },
+              "run": "t0Mf",
+              "run_id": "n1/t0Mf",
+              "settings": {
+                "n_modes": "1",
+                "t_start [M_rem]": "0"
+              },
+              "status": "converged"
+            },
+            {
+              "results": {
+                "divergences, cold chains (raw)": "0",
+                "f_0 [Hz]": "245.6 (+5.457 / -5.81)",
+                "gamma_0 [1/s]": "224.4 (+35.09 / -30.07)",
+                "max R-hat": "1",
+                "min ESS": "6868",
+                "network matched-filter SNR": "22.5 (+0.0802 / -0.141)"
+              },
+              "run": "t1Mf",
+              "run_id": "n1/t1Mf",
+              "settings": {
+                "n_modes": "1",
+                "t_start [M_rem]": "1"
+              },
+              "status": "converged"
+            },
+            {
+              "results": {
+                "divergences, cold chains (raw)": "0",
+                "f_0 [Hz]": "247.7 (+6.316 / -6.706)",
+                "gamma_0 [1/s]": "222.3 (+36.92 / -30.11)",
+                "max R-hat": "1",
+                "min ESS": "6833",
+                "network matched-filter SNR": "21.6 (+0.0799 / -0.142)"
+              },
+              "run": "t2Mf",
+              "run_id": "n1/t2Mf",
+              "settings": {
+                "n_modes": "1",
+                "t_start [M_rem]": "2"
+              },
+              "status": "converged"
+            },
+            {
+              "results": {
+                "divergences, cold chains (raw)": "0",
+                "f_0 [Hz]": "251.9 (+6.529 / -7.119)",
+                "gamma_0 [1/s]": "205.3 (+36.87 / -32.07)",
+                "max R-hat": "0.9999",
+                "min ESS": "6916",
+                "network matched-filter SNR": "19.1 (+0.0841 / -0.158)"
+              },
+              "run": "t3Mf",
+              "run_id": "n1/t3Mf",
+              "settings": {
+                "n_modes": "1",
+                "t_start [M_rem]": "3"
+              },
+              "status": "converged"
+            },
+            {
+              "results": {
+                "divergences, cold chains (raw)": "0",
+                "f_0 [Hz]": "249.8 (+7.13 / -7.58)",
+                "gamma_0 [1/s]": "223.5 (+45.78 / -37.21)",
+                "max R-hat": "0.9999",
+                "min ESS": "6294",
+                "network matched-filter SNR": "17.7 (+0.0785 / -0.173)"
+              },
+              "run": "t4Mf",
+              "run_id": "n1/t4Mf",
+              "settings": {
+                "n_modes": "1",
+                "t_start [M_rem]": "4"
+              },
+              "status": "converged"
+            },
+            {
+              "results": {
+                "divergences, cold chains (raw)": "0",
+                "f_0 [Hz]": "250.2 (+7.156 / -7.55)",
+                "gamma_0 [1/s]": "230.2 (+53.69 / -42.68)",
+                "max R-hat": "1.001",
+                "min ESS": "6883",
+                "network matched-filter SNR": "15.6 (+0.084 / -0.195)"
+              },
+              "run": "t5Mf",
+              "run_id": "n1/t5Mf",
+              "settings": {
+                "n_modes": "1",
+                "t_start [M_rem]": "5"
+              },
+              "status": "converged"
+            },
+            {
+              "results": {
+                "divergences, cold chains (raw)": "0",
+                "f_0 [Hz]": "249.9 (+7.5 / -7.877)",
+                "gamma_0 [1/s]": "233.8 (+56.77 / -47.09)",
+                "max R-hat": "1.001",
+                "min ESS": "6729",
+                "network matched-filter SNR": "14.8 (+0.0874 / -0.207)"
+              },
+              "run": "t6Mf",
+              "run_id": "n1/t6Mf",
+              "settings": {
+                "n_modes": "1",
+                "t_start [M_rem]": "6"
+              },
+              "status": "converged"
+            },
+            {
+              "results": {
+                "divergences, cold chains (raw)": "0",
+                "f_0 [Hz]": "252.5 (+8.253 / -8.757)",
+                "gamma_0 [1/s]": "240.1 (+62.28 / -49.31)",
+                "max R-hat": "1",
+                "min ESS": "7008",
+                "network matched-filter SNR": "14.7 (+0.0873 / -0.206)"
+              },
+              "run": "t7Mf",
+              "run_id": "n1/t7Mf",
+              "settings": {
+                "n_modes": "1",
+                "t_start [M_rem]": "7"
+              },
+              "status": "converged"
+            },
+            {
+              "results": {
+                "divergences, cold chains (raw)": "0",
+                "f_0 [Hz]": "251.4 (+9.693 / -10.93)",
+                "gamma_0 [1/s]": "242.5 (+65.11 / -49.74)",
+                "max R-hat": "1",
+                "min ESS": "6180",
+                "network matched-filter SNR": "14.5 (+0.0938 / -0.212)"
+              },
+              "run": "t8Mf",
+              "run_id": "n1/t8Mf",
+              "settings": {
+                "n_modes": "1",
+                "t_start [M_rem]": "8"
+              },
+              "status": "converged"
+            },
+            {
+              "results": {
+                "divergences, cold chains (raw)": "0",
+                "f_0 [Hz]": "253.5 (+10.73 / -12.34)",
+                "gamma_0 [1/s]": "230.2 (+69.19 / -53.12)",
+                "max R-hat": "1",
+                "min ESS": "6605",
+                "network matched-filter SNR": "12.8 (+0.105 / -0.24)"
+              },
+              "run": "t9Mf",
+              "run_id": "n1/t9Mf",
+              "settings": {
+                "n_modes": "1",
+                "t_start [M_rem]": "9"
+              },
+              "status": "converged"
+            },
+            {
+              "results": {
+                "divergences, cold chains (raw)": "0",
+                "f_0 [Hz]": "249.8 (+12.05 / -14.22)",
+                "gamma_0 [1/s]": "265.5 (+93.6 / -70.09)",
+                "max R-hat": "1",
+                "min ESS": "6645",
+                "network matched-filter SNR": "11.9 (+0.117 / -0.251)"
+              },
+              "run": "t10Mf",
+              "run_id": "n1/t10Mf",
+              "settings": {
+                "n_modes": "1",
+                "t_start [M_rem]": "10"
+              },
+              "status": "converged"
+            },
+            {
+              "results": {
+                "divergences, cold chains (raw)": "0",
+                "f_0 [Hz]": "248.9 (+12.43 / -15.32)",
+                "gamma_0 [1/s]": "257.4 (+116.9 / -79.46)",
+                "max R-hat": "1.001",
+                "min ESS": "6643",
+                "network matched-filter SNR": "9.83 (+0.148 / -0.317)"
+              },
+              "run": "t11Mf",
+              "run_id": "n1/t11Mf",
+              "settings": {
+                "n_modes": "1",
+                "t_start [M_rem]": "11"
+              },
+              "status": "converged"
+            },
+            {
+              "results": {
+                "divergences, cold chains (raw)": "0",
+                "f_0 [Hz]": "251.4 (+12.44 / -14.83)",
+                "gamma_0 [1/s]": "292.5 (+141.6 / -95.4)",
+                "max R-hat": "1.001",
+                "min ESS": "6255",
+                "network matched-filter SNR": "9.69 (+0.152 / -0.323)"
+              },
+              "run": "t12Mf",
+              "run_id": "n1/t12Mf",
+              "settings": {
+                "n_modes": "1",
+                "t_start [M_rem]": "12"
+              },
+              "status": "converged"
+            },
+            {
+              "results": {
+                "divergences, cold chains (raw)": "0",
+                "f_0 [Hz]": "256 (+14.28 / -15.99)",
+                "gamma_0 [1/s]": "301 (+159.6 / -97.75)",
+                "max R-hat": "1",
+                "min ESS": "6854",
+                "network matched-filter SNR": "9.58 (+0.145 / -0.339)"
+              },
+              "run": "t13Mf",
+              "run_id": "n1/t13Mf",
+              "settings": {
+                "n_modes": "1",
+                "t_start [M_rem]": "13"
+              },
+              "status": "converged"
+            },
+            {
+              "results": {
+                "divergences, cold chains (raw)": "0",
+                "f_0 [Hz]": "259.6 (+17.9 / -18.27)",
+                "gamma_0 [1/s]": "306.9 (+175.2 / -104.4)",
+                "max R-hat": "1",
+                "min ESS": "6025",
+                "network matched-filter SNR": "9.39 (+0.15 / -0.359)"
+              },
+              "run": "t14Mf",
+              "run_id": "n1/t14Mf",
+              "settings": {
+                "n_modes": "1",
+                "t_start [M_rem]": "14"
+              },
+              "status": "converged"
+            },
+            {
+              "results": {
+                "divergences, cold chains (raw)": "0",
+                "f_0 [Hz]": "264.2 (+22.82 / -20.57)",
+                "gamma_0 [1/s]": "297.1 (+179.9 / -104.8)",
+                "max R-hat": "1",
+                "min ESS": "5608",
+                "network matched-filter SNR": "8.53 (+0.163 / -0.419)"
+              },
+              "run": "t15Mf",
+              "run_id": "n1/t15Mf",
+              "settings": {
+                "n_modes": "1",
+                "t_start [M_rem]": "15"
+              },
+              "status": "converged"
+            }
+          ],
+          "settings": {
+            "Stage-2 windows dt [M_rem]": "5, 10",
+            "n_modes": "1",
+            "start times [M_rem]": "0, 1, ..., 15"
+          },
+          "title": "GW250114: 1-mode fits, 16 start times"
+        },
+        {
+          "group": "n2",
+          "runs": [
+            {
+              "results": {
+                "divergences, cold chains (raw)": "0",
+                "f_0 [Hz]": "250.3 (+8.304 / -7.87)",
+                "f_1 [Hz]": "216 (+262.6 / -179.6)",
+                "gamma_0 [1/s]": "222.1 (+55.2 / -39.99)",
+                "gamma_1 [1/s]": "1801 (+635.2 / -982.8)",
+                "max R-hat": "1",
+                "min ESS": "4541",
+                "network matched-filter SNR": "23.4 (+0.1 / -0.167)"
+              },
+              "run": "t0Mf",
+              "run_id": "n2/t0Mf",
+              "settings": {
+                "n_modes": "2",
+                "t_start [M_rem]": "0"
+              },
+              "status": "converged"
+            },
+            {
+              "results": {
+                "divergences, cold chains (raw)": "39",
+                "f_0 [Hz]": "249.4 (+8.754 / -7.782)",
+                "f_1 [Hz]": "273.9 (+563.1 / -228.1)",
+                "gamma_0 [1/s]": "222.3 (+53.05 / -38.36)",
+                "gamma_1 [1/s]": "1625 (+789.6 / -1181)",
+                "max R-hat": "1",
+                "min ESS": "4793",
+                "network matched-filter SNR": "22.6 (+0.105 / -0.163)"
+              },
+              "run": "t1Mf",
+              "run_id": "n2/t1Mf",
+              "settings": {
+                "n_modes": "2",
+                "t_start [M_rem]": "1"
+              },
+              "status": "converged"
+            },
+            {
+              "results": {
+                "divergences, cold chains (raw)": "46",
+                "f_0 [Hz]": "250.3 (+8.12 / -7.83)",
+                "f_1 [Hz]": "392.5 (+567 / -330.5)",
+                "gamma_0 [1/s]": "224.2 (+53.18 / -38.42)",
+                "gamma_1 [1/s]": "1792 (+646.5 / -1255)",
+                "max R-hat": "1.001",
+                "min ESS": "5787",
+                "network matched-filter SNR": "21.7 (+0.113 / -0.17)"
+              },
+              "run": "t2Mf",
+              "run_id": "n2/t2Mf",
+              "settings": {
+                "n_modes": "2",
+                "t_start [M_rem]": "2"
+              },
+              "status": "converged"
+            },
+            {
+              "results": {
+                "divergences, cold chains (raw)": "53",
+                "f_0 [Hz]": "251.4 (+8.064 / -8.662)",
+                "f_1 [Hz]": "232.1 (+676.3 / -197)",
+                "gamma_0 [1/s]": "225 (+67.06 / -44.01)",
+                "gamma_1 [1/s]": "1644 (+772.4 / -1265)",
+                "max R-hat": "1.001",
+                "min ESS": "5641",
+                "network matched-filter SNR": "19.1 (+0.109 / -0.183)"
+              },
+              "run": "t3Mf",
+              "run_id": "n2/t3Mf",
+              "settings": {
+                "n_modes": "2",
+                "t_start [M_rem]": "3"
+              },
+              "status": "converged"
+            },
+            {
+              "results": {
+                "divergences, cold chains (raw)": "101",
+                "f_0 [Hz]": "250.5 (+8.432 / -8.297)",
+                "f_1 [Hz]": "345 (+600.7 / -301.6)",
+                "gamma_0 [1/s]": "230.9 (+59.94 / -44.87)",
+                "gamma_1 [1/s]": "1635 (+784.6 / -1265)",
+                "max R-hat": "1.001",
+                "min ESS": "5229",
+                "network matched-filter SNR": "17.7 (+0.0983 / -0.195)"
+              },
+              "run": "t4Mf",
+              "run_id": "n2/t4Mf",
+              "settings": {
+                "n_modes": "2",
+                "t_start [M_rem]": "4"
+              },
+              "status": "converged"
+            },
+            {
+              "results": {
+                "divergences, cold chains (raw)": "94",
+                "f_0 [Hz]": "250.8 (+8.889 / -9.237)",
+                "f_1 [Hz]": "292.3 (+646.9 / -251.3)",
+                "gamma_0 [1/s]": "237.1 (+68.94 / -50.26)",
+                "gamma_1 [1/s]": "1573 (+839.7 / -1235)",
+                "max R-hat": "1",
+                "min ESS": "5167",
+                "network matched-filter SNR": "15.6 (+0.108 / -0.219)"
+              },
+              "run": "t5Mf",
+              "run_id": "n2/t5Mf",
+              "settings": {
+                "n_modes": "2",
+                "t_start [M_rem]": "5"
+              },
+              "status": "converged"
+            },
+            {
+              "results": {
+                "divergences, cold chains (raw)": "98",
+                "f_0 [Hz]": "251 (+10.18 / -10.31)",
+                "f_1 [Hz]": "283.7 (+650.9 / -243.9)",
+                "gamma_0 [1/s]": "242.3 (+80.67 / -53.89)",
+                "gamma_1 [1/s]": "1605 (+811.5 / -1262)",
+                "max R-hat": "1",
+                "min ESS": "5570",
+                "network matched-filter SNR": "14.8 (+0.119 / -0.235)"
+              },
+              "run": "t6Mf",
+              "run_id": "n2/t6Mf",
+              "settings": {
+                "n_modes": "2",
+                "t_start [M_rem]": "6"
+              },
+              "status": "converged"
+            },
+            {
+              "results": {
+                "divergences, cold chains (raw)": "85",
+                "f_0 [Hz]": "252.2 (+10.16 / -12.57)",
+                "f_1 [Hz]": "272.6 (+678.9 / -237.7)",
+                "gamma_0 [1/s]": "249.3 (+90.96 / -58.59)",
+                "gamma_1 [1/s]": "1595 (+814.6 / -1252)",
+                "max R-hat": "1",
+                "min ESS": "5234",
+                "network matched-filter SNR": "14.7 (+0.112 / -0.232)"
+              },
+              "run": "t7Mf",
+              "run_id": "n2/t7Mf",
+              "settings": {
+                "n_modes": "2",
+                "t_start [M_rem]": "7"
+              },
+              "status": "converged"
+            },
+            {
+              "results": {
+                "divergences, cold chains (raw)": "48",
+                "f_0 [Hz]": "251.8 (+12.36 / -14.35)",
+                "f_1 [Hz]": "275.3 (+665.3 / -235.2)",
+                "gamma_0 [1/s]": "253.6 (+116 / -63.74)",
+                "gamma_1 [1/s]": "1500 (+902 / -1127)",
+                "max R-hat": "1.001",
+                "min ESS": "5242",
+                "network matched-filter SNR": "14.4 (+0.125 / -0.247)"
+              },
+              "run": "t8Mf",
+              "run_id": "n2/t8Mf",
+              "settings": {
+                "n_modes": "2",
+                "t_start [M_rem]": "8"
+              },
+              "status": "converged"
+            },
+            {
+              "results": {
+                "divergences, cold chains (raw)": "52",
+                "f_0 [Hz]": "252.9 (+13.44 / -16.36)",
+                "f_1 [Hz]": "209.3 (+717.6 / -179.5)",
+                "gamma_0 [1/s]": "265.6 (+147.6 / -81.94)",
+                "gamma_1 [1/s]": "1632 (+791.7 / -1240)",
+                "max R-hat": "1",
+                "min ESS": "5476",
+                "network matched-filter SNR": "12.8 (+0.178 / -0.291)"
+              },
+              "run": "t9Mf",
+              "run_id": "n2/t9Mf",
+              "settings": {
+                "n_modes": "2",
+                "t_start [M_rem]": "9"
+              },
+              "status": "converged"
+            },
+            {
+              "results": {
+                "divergences, cold chains (raw)": "62",
+                "f_0 [Hz]": "252 (+15.61 / -16.81)",
+                "f_1 [Hz]": "267.7 (+650.4 / -227.9)",
+                "gamma_0 [1/s]": "276.5 (+142.8 / -89.64)",
+                "gamma_1 [1/s]": "1513 (+885.6 / -1169)",
+                "max R-hat": "1.001",
+                "min ESS": "5166",
+                "network matched-filter SNR": "11.9 (+0.154 / -0.293)"
+              },
+              "run": "t10Mf",
+              "run_id": "n2/t10Mf",
+              "settings": {
+                "n_modes": "2",
+                "t_start [M_rem]": "10"
+              },
+              "status": "converged"
+            },
+            {
+              "results": {
+                "divergences, cold chains (raw)": "29",
+                "f_0 [Hz]": "255.9 (+19.49 / -19.51)",
+                "f_1 [Hz]": "210.6 (+622.9 / -176.4)",
+                "gamma_0 [1/s]": "286.3 (+173 / -105.2)",
+                "gamma_1 [1/s]": "1580 (+833.7 / -1188)",
+                "max R-hat": "1",
+                "min ESS": "4666",
+                "network matched-filter SNR": "9.89 (+0.219 / -0.369)"
+              },
+              "run": "t11Mf",
+              "run_id": "n2/t11Mf",
+              "settings": {
+                "n_modes": "2",
+                "t_start [M_rem]": "11"
+              },
+              "status": "converged"
+            },
+            {
+              "results": {
+                "divergences, cold chains (raw)": "52",
+                "f_0 [Hz]": "256.6 (+20.94 / -19.68)",
+                "f_1 [Hz]": "290.3 (+614.4 / -249.9)",
+                "gamma_0 [1/s]": "302.3 (+181.8 / -111.9)",
+                "gamma_1 [1/s]": "1613 (+794.6 / -1203)",
+                "max R-hat": "1.001",
+                "min ESS": "4967",
+                "network matched-filter SNR": "9.71 (+0.206 / -0.391)"
+              },
+              "run": "t12Mf",
+              "run_id": "n2/t12Mf",
+              "settings": {
+                "n_modes": "2",
+                "t_start [M_rem]": "12"
+              },
+              "status": "converged"
+            },
+            {
+              "results": {
+                "divergences, cold chains (raw)": "27",
+                "f_0 [Hz]": "258.5 (+21.85 / -22.99)",
+                "f_1 [Hz]": "307.4 (+619.4 / -267.6)",
+                "gamma_0 [1/s]": "315.7 (+238.5 / -120.6)",
+                "gamma_1 [1/s]": "1629 (+787 / -1211)",
+                "max R-hat": "0.9999",
+                "min ESS": "5481",
+                "network matched-filter SNR": "9.56 (+0.199 / -0.403)"
+              },
+              "run": "t13Mf",
+              "run_id": "n2/t13Mf",
+              "settings": {
+                "n_modes": "2",
+                "t_start [M_rem]": "13"
+              },
+              "status": "converged"
+            },
+            {
+              "results": {
+                "divergences, cold chains (raw)": "49",
+                "f_0 [Hz]": "260.8 (+23.63 / -28.2)",
+                "f_1 [Hz]": "282 (+647.1 / -246.2)",
+                "gamma_0 [1/s]": "324.5 (+293 / -141.5)",
+                "gamma_1 [1/s]": "1619 (+798.4 / -1254)",
+                "max R-hat": "1",
+                "min ESS": "5112",
+                "network matched-filter SNR": "9.35 (+0.212 / -0.437)"
+              },
+              "run": "t14Mf",
+              "run_id": "n2/t14Mf",
+              "settings": {
+                "n_modes": "2",
+                "t_start [M_rem]": "14"
+              },
+              "status": "converged"
+            },
+            {
+              "results": {
+                "divergences, cold chains (raw)": "38",
+                "f_0 [Hz]": "262.2 (+26.91 / -40.28)",
+                "f_1 [Hz]": "348 (+582.6 / -309.9)",
+                "gamma_0 [1/s]": "324.9 (+463.1 / -150.8)",
+                "gamma_1 [1/s]": "1654 (+773 / -1203)",
+                "max R-hat": "1.001",
+                "min ESS": "3178",
+                "network matched-filter SNR": "8.48 (+0.253 / -0.546)"
+              },
+              "run": "t15Mf",
+              "run_id": "n2/t15Mf",
+              "settings": {
+                "n_modes": "2",
+                "t_start [M_rem]": "15"
+              },
+              "status": "converged"
+            }
+          ],
+          "settings": {
+            "Stage-2 windows dt [M_rem]": "5, 10",
+            "n_modes": "2",
+            "start times [M_rem]": "0, 1, ..., 15"
+          },
+          "title": "GW250114: 2-mode fits, 16 start times"
+        },
+        {
+          "group": "n3",
+          "runs": [
+            {
+              "results": {
+                "divergences, cold chains (raw)": "22",
+                "f_0 [Hz]": "250.6 (+8.524 / -7.815)",
+                "f_1 [Hz]": "195 (+256.7 / -153.8)",
+                "f_2 [Hz]": "340 (+596 / -304.2)",
+                "gamma_0 [1/s]": "224.8 (+58.1 / -41.63)",
+                "gamma_1 [1/s]": "1547 (+867 / -1096)",
+                "gamma_2 [1/s]": "1940 (+513.6 / -1044)",
+                "max R-hat": "1.001",
+                "min ESS": "4213",
+                "network matched-filter SNR": "23.4 (+0.104 / -0.166)"
+              },
+              "run": "t0Mf",
+              "run_id": "n3/t0Mf",
+              "settings": {
+                "n_modes": "3",
+                "t_start [M_rem]": "0"
+              },
+              "status": "converged"
+            },
+            {
+              "results": {
+                "divergences, cold chains (raw)": "60",
+                "f_0 [Hz]": "250.4 (+9.172 / -8.179)",
+                "f_1 [Hz]": "428.8 (+532.8 / -389)",
+                "f_2 [Hz]": "209.8 (+347.4 / -160.7)",
+                "gamma_0 [1/s]": "226.8 (+61.68 / -42.39)",
+                "gamma_1 [1/s]": "1731 (+691.3 / -1128)",
+                "gamma_2 [1/s]": "1597 (+829.5 / -1241)",
+                "max R-hat": "1",
+                "min ESS": "5770",
+                "network matched-filter SNR": "22.6 (+0.11 / -0.174)"
+              },
+              "run": "t1Mf",
+              "run_id": "n3/t1Mf",
+              "settings": {
+                "n_modes": "3",
+                "t_start [M_rem]": "1"
+              },
+              "status": "converged"
+            },
+            {
+              "results": {
+                "divergences, cold chains (raw)": "63",
+                "f_0 [Hz]": "251.3 (+9.388 / -8.628)",
+                "f_1 [Hz]": "248 (+548.1 / -207.9)",
+                "f_2 [Hz]": "434.9 (+532.6 / -379.3)",
+                "gamma_0 [1/s]": "230.3 (+67.07 / -45.75)",
+                "gamma_1 [1/s]": "1380 (+999.2 / -1028)",
+                "gamma_2 [1/s]": "2024 (+427 / -895.6)",
+                "max R-hat": "1",
+                "min ESS": "5508",
+                "network matched-filter SNR": "21.7 (+0.108 / -0.179)"
+              },
+              "run": "t2Mf",
+              "run_id": "n3/t2Mf",
+              "settings": {
+                "n_modes": "3",
+                "t_start [M_rem]": "2"
+              },
+              "status": "converged"
+            },
+            {
+              "results": {
+                "divergences, cold chains (raw)": "65",
+                "f_0 [Hz]": "251.3 (+8.948 / -9.591)",
+                "f_1 [Hz]": "180.2 (+413.5 / -146.3)",
+                "f_2 [Hz]": "416.7 (+549 / -372.6)",
+                "gamma_0 [1/s]": "235.5 (+72.04 / -49.58)",
+                "gamma_1 [1/s]": "1428 (+969.4 / -1090)",
+                "gamma_2 [1/s]": "1868 (+578.9 / -1180)",
+                "max R-hat": "1.001",
+                "min ESS": "5539",
+                "network matched-filter SNR": "19.1 (+0.116 / -0.196)"
+              },
+              "run": "t3Mf",
+              "run_id": "n3/t3Mf",
+              "settings": {
+                "n_modes": "3",
+                "t_start [M_rem]": "3"
+              },
+              "status": "converged"
+            },
+            {
+              "results": {
+                "divergences, cold chains (raw)": "86",
+                "f_0 [Hz]": "251.2 (+9.6 / -9.605)",
+                "f_1 [Hz]": "235.7 (+502.3 / -199.3)",
+                "f_2 [Hz]": "466.4 (+510.6 / -411.2)",
+                "gamma_0 [1/s]": "238.4 (+79.43 / -50.97)",
+                "gamma_1 [1/s]": "1328 (+1038 / -1041)",
+                "gamma_2 [1/s]": "1944 (+504.9 / -1078)",
+                "max R-hat": "1.001",
+                "min ESS": "5164",
+                "network matched-filter SNR": "17.7 (+0.115 / -0.218)"
+              },
+              "run": "t4Mf",
+              "run_id": "n3/t4Mf",
+              "settings": {
+                "n_modes": "3",
+                "t_start [M_rem]": "4"
+              },
+              "status": "converged"
+            },
+            {
+              "results": {
+                "divergences, cold chains (raw)": "120",
+                "f_0 [Hz]": "251.6 (+10.65 / -10.95)",
+                "f_1 [Hz]": "197.7 (+460.3 / -162.5)",
+                "f_2 [Hz]": "471.4 (+501.7 / -422.7)",
+                "gamma_0 [1/s]": "244.7 (+83.76 / -56.78)",
+                "gamma_1 [1/s]": "1355 (+1026 / -1063)",
+                "gamma_2 [1/s]": "1869 (+576.9 / -1202)",
+                "max R-hat": "1",
+                "min ESS": "4674",
+                "network matched-filter SNR": "15.6 (+0.127 / -0.236)"
+              },
+              "run": "t5Mf",
+              "run_id": "n3/t5Mf",
+              "settings": {
+                "n_modes": "3",
+                "t_start [M_rem]": "5"
+              },
+              "status": "converged"
+            },
+            {
+              "results": {
+                "divergences, cold chains (raw)": "61",
+                "f_0 [Hz]": "251.7 (+12.54 / -12.53)",
+                "f_1 [Hz]": "191.1 (+483.2 / -156.5)",
+                "f_2 [Hz]": "449.6 (+528.7 / -404.2)",
+                "gamma_0 [1/s]": "253.2 (+104.8 / -62.03)",
+                "gamma_1 [1/s]": "1321 (+1041 / -1007)",
+                "gamma_2 [1/s]": "1863 (+584.8 / -1181)",
+                "max R-hat": "1",
+                "min ESS": "5741",
+                "network matched-filter SNR": "14.7 (+0.139 / -0.253)"
+              },
+              "run": "t6Mf",
+              "run_id": "n3/t6Mf",
+              "settings": {
+                "n_modes": "3",
+                "t_start [M_rem]": "6"
+              },
+              "status": "converged"
+            },
+            {
+              "results": {
+                "divergences, cold chains (raw)": "74",
+                "f_0 [Hz]": "252.2 (+12.76 / -14.17)",
+                "f_1 [Hz]": "181.8 (+463.5 / -149.5)",
+                "f_2 [Hz]": "455.1 (+521.7 / -406.5)",
+                "gamma_0 [1/s]": "258.4 (+115.9 / -69.51)",
+                "gamma_1 [1/s]": "1370 (+1010 / -1068)",
+                "gamma_2 [1/s]": "1849 (+599.1 / -1245)",
+                "max R-hat": "1.001",
+                "min ESS": "5086",
+                "network matched-filter SNR": "14.7 (+0.139 / -0.257)"
+              },
+              "run": "t7Mf",
+              "run_id": "n3/t7Mf",
+              "settings": {
+                "n_modes": "3",
+                "t_start [M_rem]": "7"
+              },
+              "status": "converged"
+            },
+            {
+              "results": {
+                "divergences, cold chains (raw)": "86",
+                "f_0 [Hz]": "252.8 (+15 / -15.78)",
+                "f_1 [Hz]": "185.1 (+486.7 / -150.7)",
+                "f_2 [Hz]": "446.8 (+532.8 / -398.5)",
+                "gamma_0 [1/s]": "269.4 (+141.4 / -83.41)",
+                "gamma_1 [1/s]": "1387 (+989.3 / -1040)",
+                "gamma_2 [1/s]": "1867 (+574.8 / -1158)",
+                "max R-hat": "1",
+                "min ESS": "4362",
+                "network matched-filter SNR": "14.4 (+0.155 / -0.266)"
+              },
+              "run": "t8Mf",
+              "run_id": "n3/t8Mf",
+              "settings": {
+                "n_modes": "3",
+                "t_start [M_rem]": "8"
+              },
+              "status": "converged"
+            },
+            {
+              "results": {
+                "divergences, cold chains (raw)": "60",
+                "f_0 [Hz]": "254.3 (+17.69 / -18.99)",
+                "f_1 [Hz]": "165.7 (+439.6 / -135.5)",
+                "f_2 [Hz]": "434.1 (+534 / -392.7)",
+                "gamma_0 [1/s]": "286.1 (+175.5 / -98.31)",
+                "gamma_1 [1/s]": "1521 (+896.5 / -1130)",
+                "gamma_2 [1/s]": "1888 (+552.7 / -1227)",
+                "max R-hat": "1",
+                "min ESS": "4730",
+                "network matched-filter SNR": "12.9 (+0.217 / -0.321)"
+              },
+              "run": "t9Mf",
+              "run_id": "n3/t9Mf",
+              "settings": {
+                "n_modes": "3",
+                "t_start [M_rem]": "9"
+              },
+              "status": "converged"
+            },
+            {
+              "results": {
+                "divergences, cold chains (raw)": "52",
+                "f_0 [Hz]": "254.9 (+19.29 / -19.15)",
+                "f_1 [Hz]": "183 (+396.2 / -149.6)",
+                "f_2 [Hz]": "458.1 (+511.4 / -405.2)",
+                "gamma_0 [1/s]": "287.4 (+174.9 / -106.8)",
+                "gamma_1 [1/s]": "1390 (+985.4 / -1034)",
+                "gamma_2 [1/s]": "1843 (+596.9 / -1215)",
+                "max R-hat": "1",
+                "min ESS": "5384",
+                "network matched-filter SNR": "11.9 (+0.184 / -0.341)"
+              },
+              "run": "t10Mf",
+              "run_id": "n3/t10Mf",
+              "settings": {
+                "n_modes": "3",
+                "t_start [M_rem]": "10"
+              },
+              "status": "converged"
+            },
+            {
+              "results": {
+                "divergences, cold chains (raw)": "41",
+                "f_0 [Hz]": "258.2 (+21.51 / -21.63)",
+                "f_1 [Hz]": "162.2 (+349.7 / -129.7)",
+                "f_2 [Hz]": "393.6 (+559.8 / -348.5)",
+                "gamma_0 [1/s]": "301.8 (+211.5 / -118.7)",
+                "gamma_1 [1/s]": "1491 (+910.8 / -1091)",
+                "gamma_2 [1/s]": "1831 (+608.1 / -1190)",
+                "max R-hat": "1.001",
+                "min ESS": "5029",
+                "network matched-filter SNR": "9.89 (+0.227 / -0.399)"
+              },
+              "run": "t11Mf",
+              "run_id": "n3/t11Mf",
+              "settings": {
+                "n_modes": "3",
+                "t_start [M_rem]": "11"
+              },
+              "status": "converged"
+            },
+            {
+              "results": {
+                "divergences, cold chains (raw)": "54",
+                "f_0 [Hz]": "259.4 (+24.79 / -22.79)",
+                "f_1 [Hz]": "210.7 (+434.2 / -175.4)",
+                "f_2 [Hz]": "484.8 (+483 / -431.3)",
+                "gamma_0 [1/s]": "312.1 (+236 / -126.2)",
+                "gamma_1 [1/s]": "1473 (+913.2 / -1058)",
+                "gamma_2 [1/s]": "1845 (+601.2 / -1291)",
+                "max R-hat": "1",
+                "min ESS": "4555",
+                "network matched-filter SNR": "9.69 (+0.244 / -0.414)"
+              },
+              "run": "t12Mf",
+              "run_id": "n3/t12Mf",
+              "settings": {
+                "n_modes": "3",
+                "t_start [M_rem]": "12"
+              },
+              "status": "converged"
+            },
+            {
+              "results": {
+                "divergences, cold chains (raw)": "55",
+                "f_0 [Hz]": "260.1 (+26.87 / -40.82)",
+                "f_1 [Hz]": "205.9 (+447.2 / -173.7)",
+                "f_2 [Hz]": "438.4 (+526.3 / -388.7)",
+                "gamma_0 [1/s]": "341 (+434.8 / -157)",
+                "gamma_1 [1/s]": "1514 (+884.6 / -1112)",
+                "gamma_2 [1/s]": "1841 (+598.5 / -1193)",
+                "max R-hat": "1",
+                "min ESS": "4740",
+                "network matched-filter SNR": "9.53 (+0.254 / -0.495)"
+              },
+              "run": "t13Mf",
+              "run_id": "n3/t13Mf",
+              "settings": {
+                "n_modes": "3",
+                "t_start [M_rem]": "13"
+              },
+              "status": "converged"
+            },
+            {
+              "results": {
+                "divergences, cold chains (raw)": "51",
+                "f_0 [Hz]": "261.3 (+30.51 / -45.82)",
+                "f_1 [Hz]": "189.3 (+451.3 / -158.6)",
+                "f_2 [Hz]": "440 (+526.4 / -395.8)",
+                "gamma_0 [1/s]": "354.2 (+516.2 / -175.3)",
+                "gamma_1 [1/s]": "1442 (+941.9 / -1067)",
+                "gamma_2 [1/s]": "1879 (+564 / -1178)",
+                "max R-hat": "1",
+                "min ESS": "3550",
+                "network matched-filter SNR": "9.31 (+0.269 / -0.52)"
+              },
+              "run": "t14Mf",
+              "run_id": "n3/t14Mf",
+              "settings": {
+                "n_modes": "3",
+                "t_start [M_rem]": "14"
+              },
+              "status": "converged"
+            },
+            {
+              "results": {
+                "divergences, cold chains (raw)": "58",
+                "f_0 [Hz]": "260.4 (+38.25 / -114.3)",
+                "f_1 [Hz]": "241.2 (+520.9 / -206.8)",
+                "f_2 [Hz]": "404.8 (+554.4 / -355.7)",
+                "gamma_0 [1/s]": "379.6 (+773.6 / -205.7)",
+                "gamma_1 [1/s]": "1284 (+1064 / -960.8)",
+                "gamma_2 [1/s]": "1984 (+466.8 / -953.2)",
+                "max R-hat": "1.002",
+                "min ESS": "4585",
+                "network matched-filter SNR": "8.41 (+0.333 / -0.678)"
+              },
+              "run": "t15Mf",
+              "run_id": "n3/t15Mf",
+              "settings": {
+                "n_modes": "3",
+                "t_start [M_rem]": "15"
+              },
+              "status": "converged"
+            }
+          ],
+          "settings": {
+            "Stage-2 windows dt [M_rem]": "5, 10",
+            "n_modes": "3",
+            "start times [M_rem]": "0, 1, ..., 15"
+          },
+          "title": "GW250114: 3-mode fits, 16 start times"
+        }
+      ],
+      "settings": {
+        "IMR max-L remnant mass [M_sun] (frame as stored in the IMR samples)": "67.732",
+        "IMR max-L remnant spin": "0.6718",
+        "IMR peak GPS time [s]": "1420878141.218905",
+        "IMR posterior used for predictions": "NRSur7dq4",
+        "PSD": "estimated from the strain record",
+        "analysis_duration [s]": "0.3",
+        "detectors": "H1, L1",
+        "high-pass": "anti-causal 4th-order 20 Hz, on data and PSD",
+        "prior f [Hz]": "[20, 1024]",
+        "prior gamma = 1/tau [1/s]": "[1, 2500]",
+        "reference detector": "H1",
+        "runs": "48 (n_modes 1-3 x t_start 0-15 M_rem), one seed each",
+        "sample rate [Hz]": "16384",
+        "sampler": "Gibbs/WALNUTS, parallel tempering, 4 cold + 4 hot chains",
+        "sky position (IMR max-L), ra / dec [rad]": "2.3961 / 0.2925"
+      },
+      "title": "GW250114: ringdown quasinormal-mode fits"
+    }
+  ],
+  "site": "silencio results",
+  "version": "v0.1.0"
+}

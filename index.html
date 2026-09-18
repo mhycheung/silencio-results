@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--
+  Silencio interactive results site — application shell.
+  Part of the silencio interactive results application.
+  Plain ES modules, no build step, no framework, Canvas 2D, contouring in a
+  Web Worker. Data is fetched from the R2 apex https://silencio-gw.fyi
+  (see js/config.js). The page itself is served from GitHub Pages at
+  https://mhycheung.github.io/silencio-results/ .
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Silencio — ringdown posteriors</title>
+    <link rel="stylesheet" href="./css/app.css" />
+  </head>
+  <body>
+    <div class="banner" role="note">
+      <strong>Note:</strong> This site is where I and my collaborators check the results of
+      runs from a black-hole ringdown data-analysis project. Results are uploaded automatically
+      when each run finishes. They have not been checked and are very preliminary. We hope to
+      publish them formally by the end of 2026, possibly after the LVK O4c data release. You are
+      welcome to contact me to discuss these results or to build on them before then. If you
+      build on them, please do so with caution: they are very preliminary and may contain mistakes.
+    </div>
+    <header>
+      <h1><span id="title">…</span> — ringdown posteriors</h1>
+      <p id="status" class="status">starting …</p>
+    </header>
+
+    <main>
+      <aside id="rail" class="rail"></aside>
+      <section class="plotwrap">
+        <div class="exportbar">
+          <!-- PNG comes from the canvas itself; SVG is recorded by re-drawing
+               the active view into surface.SvgSurface, so the vector file and
+               the screen come from one drawing path (task T4). -->
+          <button id="export-png" class="export" type="button">Export PNG</button>
+          <button id="export-svg" class="export" type="button">Export SVG</button>
+        </div>
+        <!-- The scroll box exists for the narrow (phone) layout: a view may make
+             the canvas wider than the screen (the corner grid), and it then
+             scrolls sideways here instead of shrinking below readability. On a
+             wide screen the canvas is 100% of this box and nothing scrolls. -->
+        <div class="plotscroll"><canvas id="plot"></canvas></div>
+      </section>
+    </main>
+
+
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>

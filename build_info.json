@@ -1,0 +1,17 @@
+{
+ "script": "build_site.py",
+ "silencio_version": "v0.1.0",
+ "build_date": "2026-09-18",
+ "events": [
+  "GW250114",
+  "GW150914",
+  "GW190521_030229",
+  "GW190521_074359",
+  "GW230814_230901",
+  "GW231028_153006",
+  "GW231123",
+  "GW231226_101520"
+ ],
+ "default_event": "GW250114",
+ "note": "Every panel is drawn in the browser from posterior samples."
+}

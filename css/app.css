@@ -1,0 +1,93 @@
+/* app.css — layout for the Silencio interactive results site.
+   Part of the silencio interactive results application. */
+
+:root {
+  --ink: #1a1a1a;
+  --line: #d0d0d0;
+  --bg: #ffffff;
+  --accent: #0072b2;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font: 14px/1.45 system-ui, -apple-system, "Segoe UI", sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+}
+
+header { padding: 12px 18px 4px; border-bottom: 1px solid var(--line); }
+header h1 { font-size: 18px; margin: 0 0 4px; font-weight: 600; }
+.status { margin: 0; color: #555; font-variant-numeric: tabular-nums; }
+
+main {
+  display: grid;
+  grid-template-columns: 280px minmax(0, 1fr);
+  gap: 16px;
+  padding: 14px 18px;
+  align-items: start;
+}
+
+.rail { border: 1px solid var(--line); border-radius: 6px; padding: 10px; }
+.rail-row { display: grid; grid-template-columns: 82px 1fr; gap: 6px; align-items: center; margin-bottom: 8px; }
+.rail-row > label { color: #555; font-size: 12px; }
+.rail-row select { width: 100%; }
+.rail-row input[type="range"] { width: 130px; vertical-align: middle; }
+.readout { display: inline-block; min-width: 24px; text-align: right; font-variant-numeric: tabular-nums; }
+
+button.toggle, button.pin-btn, button.pin-x {
+  font: inherit; font-size: 12px; padding: 2px 7px; margin: 1px 2px 1px 0;
+  border: 1px solid var(--line); border-radius: 4px; background: #fafafa; cursor: pointer;
+}
+button.toggle.on { background: var(--accent); border-color: var(--accent); color: #fff; }
+button.pin-btn { margin-left: 6px; }
+
+.pin-chip {
+  display: inline-flex; align-items: center; gap: 2px;
+  border: 1px solid var(--line); border-left-width: 4px; border-radius: 4px;
+  padding: 1px 4px; margin: 1px 3px 1px 0; font-size: 12px;
+  font-variant-numeric: tabular-nums;
+}
+.pin-dot { width: 9px; height: 9px; border-radius: 50%; display: inline-block; }
+button.pin-x { border: none; background: none; padding: 0 2px; color: #888; }
+
+.plotwrap { border: 1px solid var(--line); border-radius: 6px; padding: 6px; }
+#plot { width: 100%; height: 76vh; min-height: 480px; display: block; }
+/* One finger scrolls the page; the browser leaves pinch to interact.js. */
+#plot { touch-action: pan-x pan-y; }
+
+.exportbar { display: flex; gap: 6px; justify-content: flex-end; margin-bottom: 4px; }
+button.export {
+  font: inherit; font-size: 12px; padding: 2px 9px;
+  border: 1px solid var(--line); border-radius: 4px; background: #fafafa; cursor: pointer;
+}
+button.export:hover { background: #f0f0f0; }
+button.export:disabled { color: #aaa; cursor: default; }
+
+footer { padding: 6px 18px 24px; border-top: 1px solid var(--line); color: #444; }
+footer h2 { font-size: 14px; margin: 10px 0 6px; }
+footer ul { margin: 0; padding-left: 18px; }
+footer li { margin-bottom: 4px; }
+.prov { color: #666; font-size: 12px; }
+
+/* The canvas's scroll box. No padding and no border, so on a wide screen the
+   canvas is exactly as wide as before this box existed. */
+.plotscroll { overflow-x: auto; }
+
+/* PHONE LAYOUT. Below this width the 280 px rail beside the plot left the canvas
+   44 px wide on an iPhone 13 (MEASURED 2026-09-16). The rail now stacks above
+   the plot, and the view sets the canvas height itself in pixels: a view knows
+   how tall its panels and its legend need to be, a viewport percentage does not. */
+@media (max-width: 760px) {
+  header { padding: 10px 12px 4px; }
+  main { grid-template-columns: minmax(0, 1fr); gap: 10px; padding: 10px 8px; }
+  .plotwrap { padding: 4px; }
+  #plot { height: auto; min-height: 0; }
+  footer { padding: 6px 12px 20px; }
+}
+
+/* Preliminary-results banner (user request 2026-09-18). */
+.banner { background: #fff6d6; border-bottom: 1px solid #e6cf80; color: #3d3200;
+  padding: 8px 18px; font-size: 13px; line-height: 1.45; }
+@media (max-width: 760px) { .banner { padding: 8px 12px; font-size: 12px; } }
